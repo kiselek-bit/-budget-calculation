@@ -142,31 +142,7 @@ let appData = {
 	optionalExpenses: {},
 	income: [],
 	timeData: time,
-	savings: false,
-	chooseExpenses: function () {},
-	detectedDayBudget: function() {    // Расчет дневного бюджета
-		
-	},
-	detectedLevel: function() {    // Определение уровня достатка
-		
-	},
-	checkSavings: function() {      // Депозит
-		if(appData.savings == true) {
-			let save = +prompt("Количество накоплений?"),
-				percent = +prompt("Под какой процент?");
-	
-			appData.monthIncome = save / 100 / 12 * percent;
-		}
-		alert(appData.monthIncome + " процент от накоплений");
-	},
-	chooseOptExpenses: function () {    // Необязательные расходы
-		
-	},
-	chooseIncome: function() {
-	
-		appData.income.push(prompt("Может что-то еще?", ""));
-		appData.income.sort();
-	}
+	savings: false
 };
 
 
